@@ -16,6 +16,7 @@ use super::{MemoryRegion, RegionPermissions};
 /// if memory regions were not mapped. (`parse_maps()` was not called).
 ///   
 /// [`None`]: https://doc.rust-lang.org/std/option/
+#[derive(Debug)]
 pub struct Process {
   /// A Pid (i.e., process identification number) is an auto   
   /// generated identification number for each process.
